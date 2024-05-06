@@ -1,41 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DNA to Protein Converter</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-        }
-        input[type="text"] {
-            width: 300px;
-            padding: 5px;
-        }
-        input[type="button"] {
-            padding: 5px 10px;
-            margin-top: 10px;
-        }
-        .result {
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>DNA to Protein Converter</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				margin: 40px;
+			}
+			input[type='text'] {
+				width: 300px;
+				padding: 5px;
+			}
+			input[type='button'] {
+				padding: 5px 10px;
+				margin-top: 10px;
+			}
+			.result {
+				margin-top: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>DNA to Protein Converter</h1>
+		<label for="dna-sequence">Enter DNA Sequence:</label>
+		<input type="text" id="dna-sequence" placeholder="ATGCG..." />
+		<input type="button" value="Convert" id="convert-button" />
 
-<h1>DNA to Protein Converter</h1>
-<label for="dna-sequence">Enter DNA Sequence:</label>
-<input type="text" id="dna-sequence" placeholder="ATCG...">
-<input type="button" value="Convert" onclick="convertDNA()">
+		<div class="result">
+			<h2>Results:</h2>
+			<p><strong>RNA Sequence:</strong> <span id="rna-sequence"></span></p>
+			<p><strong>Protein Sequence:</strong> <span id="protein-sequence"></span></p>
+		</div>
 
-<div class="result">
-    <h2>Results:</h2>
-    <p><strong>RNA Sequence:</strong> <span id="rna-sequence"></span></p>
-    <p><strong>Protein Sequence:</strong> <span id="protein-sequence"></span></p>
-</div>
-
-<script src="./index.js"></script>
-
-</body>
+		<script src="./index.js"></script>
+	</body>
 </html>
