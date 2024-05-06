@@ -2,7 +2,7 @@
   "name": "dna-to-protein",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://adrianwojtczak.github.io/DNA-Protein-Converter/",
+  "main": "index.js",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html"
